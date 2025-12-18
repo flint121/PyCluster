@@ -54,11 +54,16 @@ def testminmax():
     minmax = kmeans.getminmax(test)
     assert minmax == [[1.004,7.777],[1.007,12.241],[2.500,8.353]]
     
-def testminmaxscaler(k):
-    kmeans = Kmeans("euclidian distance", 10, k)
-    test = kmeans.loadplanktonsize()
-    testscaled = kmeans.minmaxscaler(test)
-    for sample in testscaled:
-        for value in sample:
-            assert not (value > 1)
-            assert not (value < 0)
+"""Initialisation tests"""    
+testinit()
+
+"""Similarity metric tests"""
+testeuclid()
+testmanhattan()
+testvectoradd()
+
+"""Biological database parsing tests"""
+testcsvparse()
+
+"""Normalisation and scaling test"""
+testminmax()
