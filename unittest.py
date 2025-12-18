@@ -62,6 +62,9 @@ testeuclid()
 testmanhattan()
 testvectoradd()
 
+"""Ease of use tests"""
+testgetfeatures()
+
 """Biological database parsing tests"""
 testcsvparse()
 

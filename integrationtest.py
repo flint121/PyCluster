@@ -70,3 +70,4 @@ testinitcentro(3)
 testassign(4)
 testnewcentroids()
 testkmeans(3)
+
